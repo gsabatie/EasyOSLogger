@@ -1,0 +1,43 @@
+PODS:
+  - EasyOSLogger (0.1.0)
+  - iOSSnapshotTestCase (6.0.0):
+    - iOSSnapshotTestCase/SwiftSupport (= 6.0.0)
+  - iOSSnapshotTestCase/Core (6.0.0)
+  - iOSSnapshotTestCase/SwiftSupport (6.0.0):
+    - iOSSnapshotTestCase/Core
+  - Nimble (8.0.1)
+  - Nimble-Snapshots (7.0.0):
+    - Nimble-Snapshots/Core (= 7.0.0)
+  - Nimble-Snapshots/Core (7.0.0):
+    - iOSSnapshotTestCase (~> 6.0)
+    - Nimble (~> 8.0)
+  - Quick (2.0.0)
+
+DEPENDENCIES:
+  - EasyOSLogger (from `../`)
+  - iOSSnapshotTestCase (~> 6.0.0)
+  - Nimble (~> 8.0.1)
+  - Nimble-Snapshots (~> 7.0.0)
+  - Quick (~> 2.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - iOSSnapshotTestCase
+    - Nimble
+    - Nimble-Snapshots
+    - Quick
+
+EXTERNAL SOURCES:
+  EasyOSLogger:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  EasyOSLogger: a06d27cb05bbd0f1d2fcf88b9b531d83f6a01ce0
+  iOSSnapshotTestCase: f592adfdedffe6113a55528ce698ccc457a550f1
+  Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
+  Nimble-Snapshots: 2d6d712ceb2d1850d88f850fbd7c732618106022
+  Quick: ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d
+
+PODFILE CHECKSUM: 25013417edd9975ff57db653092c792f001a312c
+
+COCOAPODS: 1.5.3

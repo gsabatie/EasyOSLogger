@@ -1,0 +1,6 @@
+framework module EasyOSLogger {
+  umbrella header "EasyOSLogger-umbrella.h"
+
+  export *
+  module * { export * }
+}
