@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EasyOSLogger'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A swift logger using OSLog'
 
 # This description is used to generate tags and improve search results.
