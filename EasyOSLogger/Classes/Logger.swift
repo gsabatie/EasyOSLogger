@@ -54,7 +54,7 @@ protocol Logger {
     func isLogging(_ level: LoggerMessageType) -> Bool
 }
 
-@objc final class Log: NSObject {
+@objc public final class Log: NSObject {
 
     /// the intance of the logger used by the static functions
     static let logger: Logger? = Applogger()
@@ -66,7 +66,7 @@ protocol Logger {
     ///   - functionName: The name of the function invoking the logger. By default, the function invoking the logger
     ///   - lineNumber: The line number of the function invoking the logger. By default, the line of the source code invoking the logger
     ///   - fileName: The name of the file containing the function invoking the logger
-    @objc static func verbose(_ message: @autoclosure () -> String,
+    @objc public static func verbose(_ message: @autoclosure () -> String,
                         category: LogCategory = LogCategory.app,
                         functionName: String = #function,
                         lineNumber: UInt = #line,
@@ -88,7 +88,7 @@ protocol Logger {
     ///   - functionName: The name of the function invoking the logger. By default, the function invoking the logger
     ///   - lineNumber: The line number of the function invoking the logger. By default, the line of the source code invoking the logger
     ///   - fileName: The name of the file containing the function invoking the logger
-    @objc static func info(_ message: @autoclosure () -> String,
+    @objc public static func info(_ message: @autoclosure () -> String,
                      category: LogCategory = LogCategory.app,
                      functionName: String = #function,
                      lineNumber: UInt = #line,
@@ -110,7 +110,7 @@ protocol Logger {
     ///   - functionName: The name of the function invoking the logger. By default, the function invoking the logger
     ///   - lineNumber: The line number of the function invoking the logger. By default, the line of the source code invoking the logger
     ///   - fileName: The name of the file containing the function invoking the logger
-    @objc static func warning(_ message: @autoclosure () -> String,
+    @objc public static func warning(_ message: @autoclosure () -> String,
                         category: LogCategory = LogCategory.app,
                         functionName: String = #function,
                         lineNumber: UInt = #line,
@@ -132,7 +132,7 @@ protocol Logger {
     ///   - functionName: The name of the function invoking the logger. By default, the function invoking the logger
     ///   - lineNumber: The line number of the function invoking the logger. By default, the line of the source code invoking the logger
     ///   - fileName: The name of the file containing the function invoking the logger
-    @objc static func error(_ message: @autoclosure () -> String,
+    @objc public static func error(_ message: @autoclosure () -> String,
                       category: LogCategory = LogCategory.app,
                       functionName: String = #function,
                       lineNumber: UInt = #line,
@@ -154,7 +154,7 @@ protocol Logger {
     ///   - functionName: The name of the function invoking the logger. By default, the function invoking the logger
     ///   - lineNumber: The line number of the function invoking the logger. By default, the line of the source code invoking the logger
     ///   - fileName: The name of the file containing the function invoking the logger
-    @objc static func debug(_ message: @autoclosure () -> String,
+    @objc public static func debug(_ message: @autoclosure () -> String,
                       category: LogCategory = LogCategory.app,
                       functionName: String = #function,
                       lineNumber: UInt = #line,
@@ -176,7 +176,7 @@ protocol Logger {
     ///   - functionName: The name of the function invoking the logger. By default, the function invoking the logger
     ///   - lineNumber: The line number of the function invoking the logger. By default, the line of the source code invoking the logger
     ///   - fileName: The name of the file containing the function invoking the logger
-    @objc static func entryFunction(_ message: @autoclosure () -> String,
+    @objc public static func entryFunction(_ message: @autoclosure () -> String,
                               category: LogCategory = LogCategory.app,
                               functionName: String = #function,
                               lineNumber: UInt = #line,
@@ -198,7 +198,7 @@ protocol Logger {
     ///   - functionName: The name of the function invoking the logger. By default, the function invoking the logger
     ///   - lineNumber: The line number of the function invoking the logger. By default, the line of the source code invoking the logger
     ///   - fileName: The name of the file containing the function invoking the logger
-    @objc static func exitFunction(_ message: @autoclosure () -> String,
+    @objc public static func exitFunction(_ message: @autoclosure () -> String,
                              category: LogCategory = LogCategory.app,
                              functionName: String = #function,
                              lineNumber: UInt = #line,
